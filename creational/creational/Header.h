@@ -8,3 +8,5 @@ int FactoryMethod_test();
 int Factory_test();
 int InnerFactory_test();
 int	AbstractFactory_test();
+int	Prototype_test();
+int Serialization_test();

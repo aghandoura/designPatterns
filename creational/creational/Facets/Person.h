@@ -54,9 +54,10 @@ public:
 			<< " income: " << obj.income;
 	}
 
-	friend class PersonsBuilder;
+	friend class PersonBuilder;
 	friend class PersonAddressBuilder;
 	friend class PersonJobBuilder;
+
 
 };
 

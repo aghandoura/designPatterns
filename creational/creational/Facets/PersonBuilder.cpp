@@ -3,13 +3,13 @@
 #include "PersonJobBuilder.h"
 
 
-inline PersonAddressBuilder PersonBuilder::lives()
+PersonAddressBuilder PersonBuilder::lives()
 {
 	
 	return PersonAddressBuilder{ person };
 }
 
-inline PersonJobBuilder PersonBuilder::works()
+PersonJobBuilder PersonBuilder::works()
 {
 	return PersonJobBuilder{ person };
 }

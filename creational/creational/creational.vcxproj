@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
       <Configuration>Debug</Configuration>
@@ -20,13 +20,13 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v120</PlatformToolset>
+    <PlatformToolset>v140</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v120</PlatformToolset>
+    <PlatformToolset>v140</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
@@ -84,13 +84,31 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Facets\Person.h" />
+    <ClInclude Include="Facets\PersonAddressBuilder.h" />
+    <ClInclude Include="Facets\PersonBuilder.h" />
+    <ClInclude Include="Facets\PersonJobBuilder.h" />
+    <ClInclude Include="Factory\CoffeeFactory.h" />
+    <ClInclude Include="Factory\DrinkFactory.h" />
+    <ClInclude Include="Factory\HotDrink.h" />
+    <ClInclude Include="Factory\HotDrinkFactory.h" />
+    <ClInclude Include="Factory\TeaFactory.h" />
     <ClInclude Include="Header.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Facets\facets.cpp" />
+    <ClCompile Include="Facets\Person.cpp" />
+    <ClCompile Include="Facets\PersonBuilder.cpp" />
+    <ClCompile Include="Factory\AbstractFactory.cpp" />
+    <ClCompile Include="Factory\Factory.cpp" />
+    <ClCompile Include="Factory\FactoryMethod.cpp" />
+    <ClCompile Include="Factory\InnerFactory.cpp" />
+    <ClCompile Include="GroovyBuilder.cpp" />
     <ClCompile Include="noBuilder.cpp" />
     <ClCompile Include="Builder.cpp" />
+    <ClCompile Include="Prototype\Prototype.cpp" />
     <ClCompile Include="test.cpp" />
     <ClCompile Include="stdafx.cpp" />
   </ItemGroup>

@@ -12,8 +12,8 @@ class PersonBuilder
 protected:
 	Person& person;
 
-	explicit PersonBuilder(Person& p)
-		: person{p}
+	explicit PersonBuilder(Person& person)
+		: person{person}
 	{
 	}
 

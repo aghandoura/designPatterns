@@ -5,13 +5,13 @@ int main()
 	//noBuilder_test();
 	//Builder_test();
     //GroovyBuilder_test();
-    //Facets_test(); Bug in compiler
+    Facets_test();
 	//FactoryMethod_test();
 	//Factory_test();
     //InnerFactory_test();
 	//AbstractFactory_test();
-	//Prototype_test(); Bug in compiler with friend class
-	Serialization_test();
+	//Prototype_test();
+	//Serialization_test();
 
 	getchar();
 	return 0;

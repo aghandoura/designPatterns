@@ -10,3 +10,4 @@ int InnerFactory_test();
 int	AbstractFactory_test();
 int	Prototype_test();
 int Serialization_test();
+int Singleton_test(int argc, char* av[]);

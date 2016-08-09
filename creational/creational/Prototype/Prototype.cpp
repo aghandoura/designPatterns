@@ -60,7 +60,7 @@ struct Contact
 
 	~Contact()
 	{
-		delete work_address;
+//		delete work_address;
 	}
 
 	friend class EmployeeFactory;

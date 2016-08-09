@@ -84,5 +84,7 @@ int Serialization_test()
 	Jane.name = "Jane";
 	Jane.work_address = new Address{ "134 Liberty street", "New York", 2 };
 
+	cout << Jane << John << endl;
+
 	return 0;
 }

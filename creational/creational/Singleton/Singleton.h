@@ -6,7 +6,13 @@
 #include <boost/lexical_cast.hpp>
 #include <vector>
 
-class SingletonDatabase
+class Database
+{
+public:
+	virtual int get_population(const std::string& name) = 0;
+};
+
+class SingletonDatabase : public Database
 {
 private:
 	SingletonDatabase()
@@ -45,7 +51,7 @@ public:
 		return db;
 	}
 
-	int get_population(const std::string& name) const
+	int get_population(const std::string& name) override
 	{
 		std::cout << "getting population of " << name << " : " << capitals.at(name)<<std::endl;
 
@@ -63,7 +69,25 @@ public:
 	*/
 
 };
+class DummyDatabase : public Database
+{
+	std::map<std::string, int> capitals;
+	
+public:
+	DummyDatabase()
+	{
+		capitals["alpha"] = 1;
+		capitals["beta"]  = 2;
+		capitals["gamma"] = 3;
+	}
 
+	int get_population(const std::string& name) override
+	{
+		return capitals[name];
+	}
+
+	
+};
 struct SingletonRecordFinder
 {
 	int total_population(std::vector<std::string> names)
@@ -75,5 +99,26 @@ struct SingletonRecordFinder
 		
 		return result;
 	}
+};
+
+struct ConfigurableRecordFinder
+{
+	explicit ConfigurableRecordFinder(Database& db)
+		:db{db}
+	{
+		
+	}
+
+	int total_population(std::vector<std::string> names)
+	{
+		auto result = 0;
+
+		for (auto& name : names)
+			result += db.get_population(name);
+		
+		return result;
+	}
+
+	Database& db;
 };
 

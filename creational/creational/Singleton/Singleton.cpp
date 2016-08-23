@@ -23,6 +23,13 @@ TEST(RecordFinderTest, SingletonTotalPopulationTest)
 	EXPECT_EQ(17500000 + 33200000, tp);
 }
 
+TEST(RecordFinderTest, DependantTotalPopulationTest)
+{
+	DummyDatabase db;
+	ConfigurableRecordFinder rf{ db };
+	EXPECT_EQ(4, rf.total_population(std::vector<std::string>{"alpha", "gamma"}));
+
+}
 int Singleton_test(int argc, char* av[])
 {
 	//we need to disallow those:

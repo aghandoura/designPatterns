@@ -1,4 +1,3 @@
-// structural.h : Defines the entry point for the console application.
 //
 
 #pragma once

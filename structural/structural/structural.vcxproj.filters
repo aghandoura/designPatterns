@@ -36,6 +36,15 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="adapter.h">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bridge.h">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="adapter_test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bridge_test.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

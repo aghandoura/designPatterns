@@ -37,4 +37,9 @@ public:
 	{
 		return s.c_str();
 	}
+
+	string str()
+	{
+		return s;
+	}
 };

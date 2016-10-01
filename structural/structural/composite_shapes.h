@@ -34,6 +34,7 @@ struct Circle : GraphicShape
 
     void draw() override
     {
+        std::cout << " draw " << shape_name.c_str();
         m_rendered = true;
     }
 
@@ -60,11 +61,11 @@ struct Group : GraphicShape
 
     void draw() override
     {
-        for (auto&& a : v)
+       for (auto&& a : v)
         {
             a->draw();
         }
-        std::cout << std::endl;
+       std::cout << std::endl << "------" << std::endl;
         m_rendered = true;
     }
 };

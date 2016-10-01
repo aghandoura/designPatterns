@@ -32,7 +32,7 @@ protected:
    Shape(Renderer &renderer) : renderer{renderer}{}
 
 public:
-    virtual void draw() = 0;
+    virtual void render() = 0;
     virtual void resize(float factor) = 0;
 };
 
@@ -40,7 +40,7 @@ struct Circle : Shape
 {
     float x, y, radius;
 
-    void draw() override
+    void render() override
     {
         renderer.render_circle(x, y, radius);
     }

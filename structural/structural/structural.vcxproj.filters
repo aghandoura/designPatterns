@@ -30,6 +30,12 @@
     <ClInclude Include="composite.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="mystd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="composite_shapes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -51,6 +57,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="composite_test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="composite_shapes_test.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

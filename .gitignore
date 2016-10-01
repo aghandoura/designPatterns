@@ -2,7 +2,8 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
-/structural/structural/Debug
-/structural/structural/structural.VC.VC.opendb
-/structural/structural/.vs
+structural/structural/Debug
+structural/structural/structural.VC.VC.opendb
+structural/structural/.vs
 /structural/structural/structural.VC.db
+structural/structural/structural.VC.db

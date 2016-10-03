@@ -2,7 +2,6 @@
 #include <iostream>
 #include <memory>
 #include <vector>
-#include "mystd.h"
 
 struct GraphicShape
 {
@@ -61,9 +60,9 @@ struct Group : GraphicShape
 
     void draw() override
     {
-       for (auto&& a : v)
+       for (auto& a : v)
         {
-            a->draw();
+//Bug here            a->draw();
         }
        std::cout << std::endl << "------" << std::endl;
         m_rendered = true;

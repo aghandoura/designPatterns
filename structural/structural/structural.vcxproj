@@ -148,10 +148,12 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="composite.h" />
+    <ClCompile Include="composite_neuron_test.cpp" />
     <ClCompile Include="composite_shapes_test.cpp" />
     <ClCompile Include="composite_test.cpp">
       <FileType>CppHeader</FileType>
     </ClCompile>
+    <ClInclude Include="composite_neuron.h" />
     <ClInclude Include="composite_shapes.h" />
     <ClInclude Include="mystd.h" />
     <ClInclude Include="stdafx.h" />

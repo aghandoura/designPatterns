@@ -3,6 +3,9 @@
 #include <memory>
 #include <vector>
 
+namespace  composite_shapes
+{
+    
 struct GraphicShape
 {
     std::string shape_name;
@@ -62,7 +65,7 @@ struct Group : GraphicShape
     {
        for (auto& a : v)
         {
-//Bug here            a->draw();
+            a->draw();
         }
        std::cout << std::endl << "------" << std::endl;
         m_rendered = true;
@@ -75,5 +78,6 @@ std::shared_ptr<T> Build_shape(const std::string& name)
     return{ std::make_shared<T>(T(name)) };
 }
 
+}
 
 

@@ -1,7 +1,7 @@
 #include "composite_shapes.h"
 #include "test.h"
 
-
+using namespace composite_shapes;
 //each level will contain at max 2 circles and a group
 //if circles left they will be put in the last subgroup
 struct shape_tree_draw_test

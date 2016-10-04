@@ -7,5 +7,5 @@ int main(int argc, char **argv)
 	auto status = RUN_ALL_TESTS();
 
 	getchar(); //commented to be able to run unit tests individually
-    return 0;// status;
+    return status;// status;
 }

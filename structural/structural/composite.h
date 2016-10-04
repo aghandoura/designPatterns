@@ -54,4 +54,5 @@ struct AdditionExper : Expression
         left->collect(v);
         right->collect(v);
     }
+    virtual ~AdditionExper() = default;
 };

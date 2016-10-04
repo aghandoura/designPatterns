@@ -2,10 +2,7 @@
 
 #pragma once
 
-#include "stdafx.h"
-#include<iostream>
 #include<vector>
-#include<string>
 #include<boost/algorithm/string.hpp>
 
 using namespace std;
@@ -33,7 +30,7 @@ public:
 		return parts;
 	}
 
-	const char* c_str()
+	const char* c_str() const
 	{
 		return s.c_str();
 	}
